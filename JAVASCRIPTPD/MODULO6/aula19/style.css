@@ -1,0 +1,11 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+aside {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        background-color: rgb(116, 179, 116);
+        height: 100vh;
+    }

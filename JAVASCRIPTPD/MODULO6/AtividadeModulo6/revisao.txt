@@ -1,0 +1,53 @@
+DOM (Document Object Model): quando o navegador lê HTML, ele o transforma tudo em uma árvore de objetos (DOM). O JS usa o DOM para 
+encontrar e modificar elementos na tela.
+- acessar DOM no JS: document;
+
+Para encontrar elemento do HTML e modificar eles no JS podemos chamalos das seguintes formas:
+-EX DE PÁG
+<h1>Meu título</h1>
+<p class="contador">Texto aqui</p>
+<span id="dias">268</span>
+
+-- Por tag: document.getElementsByTagName("h1")  "me dá todos os elementos h1 da página"
+-- Por class: document.getElementsByClassName("contador")  "me dá todos os elementos com class='contador'"
+-- Por querySelector:
+document.querySelector("h1")       // tag → sem símbolo
+document.querySelector(".contador") // classe → com ponto
+document.querySelector("#dias")     // id → com #
+
+Depois que o elemento é encontrado, precisamos fazer algo com ele, como por ex:
+-- MUDAR TEXTO 
+document.getElementById("dias").textContent = "268";
+-- MUDAR O ESTILO
+document.getElementById("dias").style.color = "blue";
+-- MUDAR O HTML INTERNO
+document.getElementById("dias").innerHTML = "<strong>268</strong>";
+
+DOM(document) é a casa, os seletores são formas de achar e modificar um cômodo da casa;
+
+--------------------------------------------------------------------------------------------------------------------------
+
+ARRAYS DE OBJETO: lista de objetos;
+- OBJETO: forma de guardar várias informações relacionadas em uma única variável;
+const tarefa = {
+  descricao: "Estudar JavaScript",    - descricao: o nome da tarefa
+  status: false                       - status: se está concluido ou nao
+};
+Arrays de objeto(Lista de objeto): usado para criar listas de tarefas, ou apps de tarefas
+const tarefa[
+    {
+        descricao = 'Estudar JS', status: false;
+        descricao = 'Ler um livro', status: false;
+        descricao = 'Comer fruta', status: True;
+    }
+]
+
+*Para adicionar um novo objeto sem precisar voltar:
+tarefas.push({ descricao: "Nova tarefa", status: false });   - usar .push
+*Para alterar tarefas:
+tarefas[0].status = true;                                    - marca a primeira tarefa como concluída
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
