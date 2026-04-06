@@ -51,3 +51,17 @@ tarefas[0].status = true;                                    - marca a primeira 
 --------------------------------------------------------------------------------------------------------------------------
 
 
+PASSO A PASSO PARA REALIZAR AS TAREFAS  
+#1 criar um arquivo HTML com as informações que apareceram no navegador;
+#2 criar uma variável "const = tarefa[]" - isso perimite que uma array seja criada;
+#3 chamar e modificar elementos do HTML no JS a partir dos "document.getElementById"
+#4 criar uma função para que os novos item sejam adicionados noa array (nesse momento os itens não apareceram na tela do navegador,
+eles devem aparecer no "ctrl+shift+i");
+#5 criar função para aparecer na tela (adicionar e criar lista, marcar checkbox);
+#6 criar arquivo CSS para estilizar a pág do navegador web;
+
+--------------------------------------------------------------------------------------------------------------------------
+
+OBS: Foi usado IA para estilização com CSS e para remanejo de informações no código JS;
+
+--------------------------------------------------------------------------------------------------------------------------
