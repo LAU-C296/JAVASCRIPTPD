@@ -1,0 +1,38 @@
+Web Storage — localStorage e sessionStorage
+
+Web Storage é uma API do navegador que permite armazenar dados diretamente no browser do usuário, sem precisar
+enviar nada para um servidor. É muito mais prático e performático que os antigos cookies para guardar dados
+no cliente.
+
+┌─────────────────── WEB STORAGE API ───────────────────┐
+│                                                        │
+│   ┌─────────────────┐      ┌──────────────────────┐   │
+│   │  localStorage   │      │   sessionStorage     │   │
+│   │                 │      │                      │   │
+│   │ Persiste para   │      │ Existe só enquanto   │   │
+│   │ sempre          │      │ a aba está aberta    │   │
+│   └─────────────────┘      └──────────────────────┘   │
+│                                                        │
+│   Armazenamento: ~5MB por origem                       │
+│   Formato: chave → valor (sempre strings)              │
+└────────────────────────────────────────────────────────┘
+
+localStorage:
+Armazena dados sem prazo de validade. Os dados ficam salvos mesmo depois de fechar o navegador,
+reiniciar o computador, etc. Só são apagados manualmente ou via código.
+
+// ✅ Salvar
+localStorage.setItem("usuario", "Carlos");
+
+// ✅ Ler
+const nome = localStorage.getItem("usuario");
+console.log(nome); // "Carlos"
+
+// ✅ Remover um item
+localStorage.removeItem("usuario");
+
+// ✅ Apagar tudo
+localStorage.clear();
+
+// ✅ Ver quantos itens existem
+console.log(localStorage.length); // 0

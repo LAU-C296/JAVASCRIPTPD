@@ -1,0 +1,44 @@
+JSON (JavaScript Object Notation)
+Formato de troca leve de dados, ele é idependente do JS;
+
+*Estruturas Básicas:
+Objetos: coleção de pares chave: valor
+arrays: listas ordenadas de valores
+
+*Tipos de dados:
+string => "Laura"=> sempre duas entre aspas
+number => 2, 3.14 => inteiro ou decimal
+boolean => true, false => sempre minusculo
+null => null => ausência de valor
+object => {"nome": "Ana"} => entre {}
+array => [1,2,3] => entre []
+
+*ObJETO                             *ARRAYS
+{                                   ["maçã", "banana", "uva"]
+  "nome": "Carlos",
+  "idade": 30,
+  "ativo": true,
+  "endereco": null
+}
+
+*JSON em API's REST
+-JSON é o formato padrão de comunicação entre frontend e backend:
+
+POST /api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Pedro",
+  "email": "pedro@email.com",
+  "senha": "123456"
+}
+
+HTTP/1.1 201 Created
+
+{
+  "id": 42,
+  "nome": "Pedro",
+  "email": "pedro@email.com",
+  "criadoEm": "2026-04-07T10:30:00Z"
+}
+

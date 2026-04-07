@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+
+h1 {
+    color: #9b59b6;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.buscar-container {
+    display: flex;
+    gap: 10px; /* espaço entre input e botões */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+#btn-buscar, #btn-limpar {
+    display: inline-flex !important;
+}
+
+
+#busca {
+    width: 250px; /* mantém o tamanho grande */
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #9b59b6;
+    outline: none;
+    font-size: 1rem;
+    background-color: #1c1c1c;
+    color: #fff;
+    transition: border 0.3s;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#busca:focus {
+    border-color: #8e44ad;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 80px; /* largura mínima igual para ambos */
+}
+
+
+#btn-buscar {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+#btn-buscar:hover {
+    background-color: #8e44ad;
+    transform: scale(1.05);
+}
+
+/* Botão Limpar */
+#btn-limpar {
+    background-color: #8e44ad;
+    color: #fff;
+    border: 2px solid #9b59b6;
+}
+
+#btn-limpar:hover {
+    background-color: #9b59b6;
+    color: #fff;
+    transform: scale(1.05);
+}
+#lista {
+    list-style: none;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#lista li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #1c1c1c;
+    border-left: 5px solid #9b59b6;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#lista li:hover {
+    transform: translateX(5px);
+    background-color: #2c2c2c;
+}
+
+#lista img {
+    border-radius: 50%;
+    border: 2px solid #9b59b6;
+}
+
+#lista a {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#lista a:hover {
+    text-decoration: underline;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #9b59b6;
+    font-weight: bold;
+    text-align: center;
+}

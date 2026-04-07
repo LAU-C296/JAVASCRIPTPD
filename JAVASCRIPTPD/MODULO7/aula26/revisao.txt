@@ -1,0 +1,28 @@
+PROMISE
+Uma promise é um objeto que representa um valor que ainda nao chegou, mas vai chegar no futuro.
+é como se fosse um pedido no ifood:
+1 Você fez o pedido (Promise criada)
+2 Está sendo preparado (pending)
+3 Chegou (fulfilled)
+4 Ou deu problema (rejected)
+
+Uma promise sempre estara em um dos 3 estágios:
+1- Pending (pendente)
+→ ainda está executando
+2- Fulfilled (resolvida)
+→ deu certo (resolve)
+3- Rejected (rejeitada)
+→ deu erro (reject)
+
+
+Exemplo
+const promessa = new Promise((resolve, reject) => {
+    let deuCerto = true;
+
+    if (deuCerto) {
+        resolve("Funcionou!");
+    } else {
+        reject("Deu erro!");
+    }
+});
+    
