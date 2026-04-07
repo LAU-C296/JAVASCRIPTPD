@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #667c92;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#input-tarefa {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e6ed;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #2c3e50;
+    background-color: #f8f9fb;
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+}
+
+#input-tarefa:focus {
+    outline: none;
+    border-color: #6c63ff;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+}
+
+#input-tarefa::placeholder {
+    color: #a8adb5;
+}
+
+#btn-adicionar {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6c63ff 0%, #5a54d4 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+}
+
+#btn-adicionar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+#btn-adicionar:active {
+    transform: translateY(0);
+}
+
+#btn-Excluir{
+    background-color:rgba(108, 99, 255, 0.4) ;
+}
+
+#lista-tarefas {
+    list-style: none;
+}
+
+#lista-tarefas li {
+    background: #f8f9fb;
+    padding: 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 4px solid #6c63ff;
+    transition: all 0.3s ease;
+    animation: slideIn 0.3s ease;
+    gap: 12px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#lista-tarefas li:hover {
+    background: #f0f2f8;
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#lista-tarefas span {
+    color: #2c3e50;
+    font-size: 1rem;
+    flex: 1;
+    word-break: break-word;
+}
+
+#lista-tarefas button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#lista-tarefas button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+#lista-tarefas button:first-of-type:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#lista-tarefas button:last-of-type {
+    background-color: #ff9800;
+    color: white;
+}
+
+#lista-tarefas button:last-of-type:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
